@@ -152,30 +152,68 @@ Early Warnings & Health Monitering System
 
 ## Current Progress
 
-### Completed
+### Component 1 – Genomic Obesity Risk Prediction
 
+#### Completed
 - Literature Review
-- Dataset Collection
+- GWAS Dataset Collection
 - Data Preprocessing
 - Feature Engineering
-- Logistic Regression
-- Random Forest
-- SVM
-- MLP
-- XGBoost
-- SHAP Explainability
-- Optimized MLP Pipeline
+- Class Imbalance Handling (SMOTE)
+- Logistic Regression Implementation
+- Random Forest Implementation
+- Support Vector Machine (SVM) Implementation
+- Multilayer Perceptron (MLP) Implementation
+- XGBoost Implementation
+- SHAP Explainability Analysis
+- Optimized MLP Pipeline Development
+- Model Evaluation using Accuracy, Precision, Recall, F1-Score and ROC-AUC
+- Model Saving and Reusable Pipeline Creation
 
-### In Progress
+#### In Progress
+- Model Deployment Preparation
+- Backend API Integration
 
-- Frontend Development
-- Dietary Recommendation Module
+---
 
-### Planned
+### Component 2 – Personalized Dietary Recommendation System
 
-- Backend API Development
-- System Integration
-- Deployment
+#### Completed
+- Requirement Analysis
+- Literature Review
+- Dataset Identification
+- Recommendation Methodology Design
+- Recommendation Pipeline Design
+
+#### In Progress
+- Nutrition Dataset Collection
+- Recommendation Model Development
+- Food Categorization Framework
+
+#### Planned
+- Personalized Diet Plan Generation
+- Calorie Requirement Calculation
+- Food Recommendation Engine
+
+---
+
+### Component 3 – Early Warning & Health Monitoring System
+
+#### Completed
+- Requirement Analysis
+- Literature Review
+- Health Monitoring Framework Design
+- Early Warning Mechanism Design
+
+#### In Progress
+- Health Indicator Selection
+- Monitoring Workflow Development
+
+#### Planned
+- Alert Generation Module
+- Health Trend Analysis Module
+- Risk Notification System
+- Dashboard Development
 
 ---
 
