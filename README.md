@@ -1,82 +1,254 @@
-# R26_IT_NU_001_Genomic-Obesity-Prediction-and-Dietary-Recommendation
+# Explainable Deep Learning Framework for Hereditary Obesity Risk Prediction Using Genomic Data
 
 ## Project Overview
 
-This research project aims to develop an AI-powered healthcare system that predicts hereditary obesity risk using genomic data and provides personalized health recommendations. The system integrates genomic obesity prediction, personalized dietary recommendations, and AI-based health insights to support early obesity prevention and management.
+This research project aims to develop an Explainable Artificial Intelligence (XAI) framework for predicting hereditary obesity risk using Genome-Wide Association Study (GWAS) data.
 
-## Research Problem
+The proposed system utilizes genomic features such as SNP information, chromosome positions, mapped genes, risk allele frequencies, and genetic effect sizes to predict obesity susceptibility. SHAP explainability is integrated to provide transparent and interpretable predictions.
 
-Traditional obesity detection methods primarily rely on physical measurements such as Body Mass Index (BMI), lifestyle factors, and clinical observations. These approaches often fail to identify individuals who are genetically predisposed to obesity before symptoms become visible. This research addresses this limitation by utilizing genomic data and machine learning techniques to enable early obesity risk prediction.
+---
 
-## Objectives
+## Research Objectives
 
-### Main Objective
+1. Predict hereditary obesity risk using genomic data.
+2. Improve prediction performance through genomic feature engineering.
+3. Address class imbalance using SMOTE.
+4. Provide explainable predictions using SHAP.
+5. Generate personalized dietary recommendations based on predicted obesity risk.
 
-Develop an AI-driven system for early obesity risk prediction using genomic data and personalized health recommendations.
+---
 
-### Sub Objectives
+## System Components
 
-1. Develop a genomic obesity prediction model using GWAS and genomic datasets.
-2. Generate personalized dietary recommendations based on obesity risk levels.
-3. Provide explainable AI insights to improve model transparency and user understanding.
+### Component 1 – Obesity Risk Prediction
+
+Purpose : Predicting hereditary obesity risk using genomic features and an optimized MLP model.
+
+Technologies:
+- Python
+- Scikit-Learn
+- MLP Classifier
+- SMOTE
+
+---
+## Dataset
+
+### GWAS Obesity Dataset
+
+Features used:
+- CHR_ID
+- CHR_POS
+- REPORTED GENE(S)
+- MAPPED_GENE
+- RISK ALLELE FREQUENCY
+- OR or BETA
+- STRONGEST SNP-RISK ALLELE
+- SNPS
+- CONTEXT
+- INTERGENIC
+- UPSTREAM_GENE_DISTANCE
+- DOWNSTREAM_GENE_DISTANCE
+
+Source:
+GWAS Catalog
+
+---
+
+### Component 2 – Personalized Dietary Recommendation System
+
+Purpose: Generate personalized dietary recommendations based on:
+
+- Predicted obesity risk
+- Age
+- Lifestyle
+- Food preferences
+- Health profile
+
+Output:
+
+- Recommended foods
+- Foods to avoid
+- Daily calorie intake
+- Personalized diet plan
+
+Technologies:
+
+- Recommendation algorithms
+- Nutrition datasets
+- Python
+
+Dataset:
+
+- Keggle Food & Nutrition Dataset
+
+---
+
+### Component 3 – Early Warning & Health Monitoring System
+
+Purpose: Continuously monitor user health indicators and provide early warnings for obesity-related risks.
+
+Inputs:
+
+- BMI
+- Weight trends
+- Physical activity
+- Sleep patterns
+- Calorie intake
+- Historical risk predictions
+
+Outputs:
+
+- Risk alerts
+- Health trend analysis
+- Early warning notifications
+- Preventive health recommendations
+
+Technologies:
+
+- Health monitoring module
+- Notification system
+- Data analytics
+
+---
+
+## Methodology
+
+Dataset Collection
+↓
+Data Preprocessing
+↓
+Feature Engineering
+↓
+Feature Encoding
+↓
+Feature Scaling
+↓
+SMOTE Balancing
+↓
+Optimized MLP Training
+↓
+Obesity Risk Prediction
+↓
+SHAP Explainability
+↓
+Personalized Dietary Recommendation
+↓
+Early Warnings & Health Monitering System
+
+---
 
 ## Technologies Used
 
-* Python
-* Scikit-learn
-* XGBoost
-* TensorFlow / PyTorch
-* SHAP (Explainable AI)
-* NumPy
-* Pandas
-* Jupyter Notebook
-* Git & GitHub
+- Python
+- NumPy
+- Pandas
+- Scikit-learn
+- SHAP
+- Jupyter Notebook
+- Git
+- GitHub
 
-## Datasets
-
-* GWAS Catalog Dataset
-* Obesity-related GWAS Dataset
-* UK Biobank Dataset (Planned)
-* Food and Nutrition Dataset (For Recommendation System)
-
-## Project Components
-
-### Component 1 – Genomic Obesity Prediction
-
-Predict hereditary obesity risk using genomic features extracted from GWAS datasets.
-
-### Component 2 – Personalized Dietary Recommendation
-
-Generate personalized diet plans based on obesity risk level, nutritional requirements, and user preferences.
-
-### Component 3 – Explainable AI Analysis
-
-Provide interpretable explanations using SHAP to identify genomic factors influencing obesity risk predictions.
-
-## Repository Structure
-
-/project
-│
-├── data/
-├── notebooks/
-├── src/
-├── documentation/
-├── README.md
+---
 
 ## Current Progress
 
-* Literature review completed
-* Research proposal prepared
-* GWAS dataset preprocessing completed
-* Baseline machine learning experiments completed
-* Feature engineering experiments in progress
-* XGBoost model implementation in progress
+### Completed
 
-## Team
+- Literature Review
+- Dataset Collection
+- Data Preprocessing
+- Feature Engineering
+- Logistic Regression
+- Random Forest
+- SVM
+- MLP
+- XGBoost
+- SHAP Explainability
+- Optimized MLP Pipeline
 
-Sri Lanka Institute of Information Technology (SLIIT)
+### In Progress
+
+- Frontend Development
+- Dietary Recommendation Module
+
+### Planned
+
+- Backend API Development
+- System Integration
+- Deployment
+
+---
+
+## Repository Structure
+
+Obesity_Project/
+│
+├── README.md
+│
+├── Component_1_Genomic_Risk_Prediction/
+│   │
+│   ├── data/
+│   ├── notebooks/
+│   │   ├── Experiment_1.ipynb
+│   │   ├── Experiment_2.ipynb
+│   │   ├── Experiment_3.ipynb
+│   │   └── Experiment_4.ipynb
+│   │
+│   ├── models/
+│   │   └── optimized_mlp.pkl
+│   │
+│   ├── results/
+│   │   └── evaluation_metrics.csv
+│   │
+│   └── docs/
+│       └── methodology_notes.md
+│
+├── Component_2_Dietary_Recommendation_System/
+│   │
+│   ├── data/
+│   │   └── nutrition_dataset.csv
+│   │
+│   ├── notebooks/
+│   │   └── recommendation_experiment.ipynb
+│   │
+│   ├── models/
+│   │   └── recommendation_model.pkl (optional/future)
+│   │
+│   ├── results/
+│   │   └── sample_diet_plans.csv
+│   │
+│   └── docs/
+│       └── recommendation_logic.md
+│
+├── Component_3_Early_Warning_Health_Monitoring/
+│   │
+│   ├── data/
+│   │   └── health_logs.csv
+│   │
+│   ├── notebooks/
+│   │   └── monitoring_system.ipynb
+│   │
+│   ├── models/
+│   │   └── risk_trend_model.pkl (optional)
+│   │
+│   ├── results/
+│   │   └── alerts_output.csv
+│   │
+│   └── docs/
+│       └── monitoring_system_design.md
+│
+└── docs/
+    ├── system_architecture.png
+    ├── research_report_draft.docx
+    └── references.md
+
+---
+
+## Authors
+
+Haarun Chandramohan - IT22268662
+Dineshkumar Sivapalan - IT22056016
+Farshad Inayadulla - IT22182500
+
+SLIIT
 Final Year Research Project
-
-## License
-
-This project is developed for academic and research purposes.
