@@ -206,19 +206,12 @@ Obesity_Project/
 ├── Component_2_Dietary_Recommendation_System/
 │   │
 │   ├── data/
-│   │   └── nutrition_dataset.csv
 │   │
 │   ├── notebooks/
-│   │   └── recommendation_experiment.ipynb
-│   │
-│   ├── models/
-│   │   └── recommendation_model.pkl (optional/future)
 │   │
 │   ├── results/
-│   │   └── sample_diet_plans.csv
 │   │
-│   └── docs/
-│       └── recommendation_logic.md
+│   └── .DS_Store      
 │
 ├── Component_3_Early_Warning_Health_Monitoring/
 │   │
@@ -236,11 +229,6 @@ Obesity_Project/
 │   │
 │   └── docs/
 │       └── monitoring_system_design.md
-│
-└── docs/
-    ├── system_architecture.png
-    ├── research_report_draft.docx
-    └── references.md
 
 ---
 
