@@ -247,9 +247,7 @@ Obesity_Project/
 │   │
 │   ├── notebooks/
 │   │
-│   ├── results/
-│   │
-│   └── .DS_Store      
+│   ├── results/     
 │
 ├── Component_3_Early_Warning_Health_Monitoring/
 │   │
