@@ -252,19 +252,8 @@ Obesity_Project/
 ├── Component_3_Early_Warning_Health_Monitoring/
 │   │
 │   ├── data/
-│   │   └── health_logs.csv
 │   │
-│   ├── notebooks/
-│   │   └── monitoring_system.ipynb
-│   │
-│   ├── models/
-│   │   └── risk_trend_model.pkl (optional)
-│   │
-│   ├── results/
-│   │   └── alerts_output.csv
-│   │
-│   └── docs/
-│       └── monitoring_system_design.md
+│   └── train_model_real_data.py
 
 ---
 
